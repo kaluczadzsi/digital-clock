@@ -56,10 +56,6 @@ p {
   background-color: rgba(48, 162, 255, 0.7);
 }
 
-.clock article:last-child {
-  background-color: transparent;
-}
-
 .hidden {
   visibility: hidden;
 }
@@ -68,4 +64,11 @@ p {
   display: flex;
   text-align: center;
   gap: 1rem;
+}
+
+.clock article:last-child {
+  background-color: transparent;
+}
+.clock article:last-child p {
+  background-color: rgba(95, 156, 95, 0.8);
 }
