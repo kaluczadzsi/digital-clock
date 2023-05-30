@@ -23,7 +23,9 @@ function updateClock() {
   ampmEl.innerText = currentAmPm;
 
   secondEl.innerText =
-    secondEl.innerText < 10 ? `0${secondEl.innerText}` : secondEl.innerText;
+    secondEl.innerText < 10
+      ? secondEl.innerText.padStart(2, 0)
+      : secondEl.innerText;
 }
 
 window.addEventListener('load', updateClock);
